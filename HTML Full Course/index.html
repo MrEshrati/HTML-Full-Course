@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- this are some basic meta tags -->
+        <!-- meta tags are used to define the website information to browser -->
         <meta charset="utf-8" />
-        <meta name="Description" content="This is an Awesome Website"/>
+        <!-- this meta tag is important for ranking in the search engines
+        page -->
+        <meta name="description" content="This is an Awesome Website"/>
+        <meta name="author" content="Arshia"/>
+        <meta name="keywords" content="HTML, Tutorial"/>
+        <!-- this meta tag is for making the page responsive on 
+        diffrent devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Arshia's Website</title>
     </head>
 
@@ -50,6 +59,174 @@
         <!-- Theres a website that contains all of the css colors
          = https://www.w3schools.com/cssref/css_colors.asp -->
 
-         
+        <!-- header tag is to define the header section of your
+        site and header codes goes in here -->
+        <header>
+
+            <!-- navigation tag is for the navigation links and
+            icons to go in this tag usually the buttons and links
+            that are in the header will go in this tag -->
+            <nav></nav>
+        </header>
+
+        <!-- main tag is to define the body of your website ot 
+        the main content of your website -->
+        <main>
+
+            <!-- article tag is for putting an article in it -->
+            <article>
+
+                <!-- section tag will define the diffrent sections
+                of the article written in the article tag (Its not 
+                necessary to add section tag in article tag )-->
+                <section>
+
+                    <!-- Its better to use header tag(h1,h2,...) in
+                    a order that looks like this -->
+            
+                    <!-- 
+                        h1
+                            h2
+                                h3
+                            h2
+                        h1
+                     -->
+                </section>
+                <section>
+
+                    <!-- aside tag is used to define that this content
+                    is not related to the main content of the site like
+                    for an ad container its recommended to use this tag -->
+                    <aside></aside>
+                </section>
+            </article>
+        </main>
+        
+        <!-- footer tag is to define the bottom section of your
+        website and the footer codes goes in here -->
+        <footer></footer>
+
+        <!-- link tags are used to navigate user to other pages or
+        websites or even opening documents or pics -->
+        <a href="https://www.google.com"><h1>Google's HomePage in This tab</h1></a>
+        <!-- the _blank attribute is used to open a link or doc or 
+        ... in a new tab-->
+        <a href="http://www.google.com" target="_blank"><h1>Google's HomePage in Newtab</h1></a>
+    
+        <!-- image tags are used to show images from internet or local 
+        sources and using the src attribute we can link to image that
+        we want -->
+        <!-- alt attribute is used to when image doesn't load the text
+        that you put in the alt will be replaced with the image -->
+        <!-- another attribute is width or height that can resize the 
+        image the way we want but always keep that in mind to resize
+        the image based on the aspect ratio of the image and if you
+        just give the tag a width the html will automaticlly adjust
+        the aspect ratio -->
+        <img src="https://imgs.search.brave.com/7F60yS0NECIVLRfYCWlweSJOS89w57ebXXSfWKuijtE/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5L/V3BMaG5FUUNEd2tY/SXdZOXRRWUNBSGFF/OCZwaWQ9QXBp" alt="Nature Image" />
+    
+        <!-- video tag is used to display videos and it gets diffrent
+        attributes such as src,poster(thumbnail),width and ... -->
+        <!-- poster attribute is used to display a thumbnail from the 
+        pic we gave it through a link -->
+        <!-- It is important to use a controls attribute for this tag
+        to be able to play the video -->
+        <!-- loop attribute will replay the video after finishing
+        and autoplay attribute will play the video automaticlly
+        when it loads -->
+        <video src="#" poster="https://imgs.search.brave.com/7F60yS0NECIVLRfYCWlweSJOS89w57ebXXSfWKuijtE/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5L/V3BMaG5FUUNEd2tY/SXdZOXRRWUNBSGFF/OCZwaWQ9QXBp" loop autoplay controls width="350"></video>
+    
+        <!-- iframe tags is used to bring another site section such
+        as youtube videos with the border of it directly to our site -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        <!-- UnOrganize List tag is used to list a bunch of items 
+        that are in list tags -->
+        <!-- There can be a ul inside a list tag -->
+        <ul>
+            <li>Apples</li>
+            <li>Oranges
+                <ul>
+                    <li>Orange Fruit</li>
+                </ul>
+            </li>
+            <li>Bananas</li>
+        </ul>
+
+        <!-- Organized List is a ul tag that will organize the items inside it -->
+        <!-- There are diffrent type of organizing that can be chosen
+        with the type attribute -->
+        <ol type="a">
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Bananas</li>
+        </ol>
+
+        <!-- Description List is a list that contains two tags dt,dd
+        dt(Description Term) is for name of the item and dd(Description Detail)
+        is for item description -->
+        <dl>
+            <dt>Apple</dt>
+            <dd>Description</dd>
+        </dl>
+
+        <!-- Table tag will create a excel or google sheet 
+        table that you can make diffrent rows and columns -->
+        <table>
+            <!-- Caption tag is like a title for the table tag -->
+            <caption><h3>Number Table</h3></caption>
+
+            <!-- thead and tbody are like sections for table tag -->
+            <thead>
+                <!-- tr(table row) will create a new row in table -->
+                <tr>
+                    <!-- th will define the heade of the table columns -->
+                    <th>num1</th>
+                    <th>num2</th>
+                    <th>num3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- td will define a body column for the table -->
+                    <td>one</td>
+                    <td>two</td>
+                    <td>three</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- The two main wrapping tags in html are spans and divs -->
+        <!-- Spans are displayed Inline it means that they will stay
+        next to each other if there is space -->
+        <!-- Divs are displayed block it means that they will not stay 
+        next to each other and new divs will jump in new lines -->
+        <span>Span1</span>
+        <span>Span2</span>
+        <hr/>
+        <div>Div1</div>
+        <div>Div2</div>
+
+        <!-- form tag is used to send datas to webserver or other languages
+        and has diffrent methods and actions -->
+        <form>
+            <!-- input tag is used to enter data into it and it has diffrent
+            types -->
+            <!-- value attribute is used to set a default value and placeholder 
+            is used to set a hint text for input -->
+            <input type="text" value="" placeholder="" />
+            <!-- button with submit type are usually used in form tags to
+            submit the input tags and call form to send data -->
+            <button type="submit"></button>
+        </form>
+
+        <!-- iframe tags are used to embed another website into our site
+        but keep that in mind that some websites cant be use through iframe
+        because of their rules -->
+        <!-- the text of this tag will be used when the site will not shown
+        due to an error or browser -->
+        <!-- the frameborder attribute is used to delete the gray border of
+        the iframe -->
+        <iframe src="https://www.giraffeacademy.com/" frameborder="0" width="1200" height="500">Sorry Can't Display That</iframe>
     </body>
 </html>
